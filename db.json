@@ -1,0 +1,76 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "name": "Dunk SB Low Red Plum",
+            "price": 150,
+            "stock": 1
+        },
+        {
+            "id": 2,
+            "name": "Jordan 1 Mid Racer Blue",
+            "price": 200,
+            "stock": 1
+        },
+        {
+            "id": 3,
+            "name": "Dunk SB Low Navy Gum",
+            "price": 220,
+            "stock": 1
+        },
+        {
+            "id": 4,
+            "name": "Adidas Forum 84 High",
+            "price": 210,
+            "stock": 0
+        },
+        {
+            "id": 5,
+            "name": "Jordan 1 High Brotherhood",
+            "price": 250,
+            "stock": 1
+        },
+        {
+            "id": 6,
+            "name": "Jordan 1 Low Dark Teal",
+            "price": 200,
+            "stock": 1
+        },
+        {
+            "id": 7,
+            "name": "Hoodie Essentials",
+            "price": 160,
+            "stock": 1
+        },
+        {
+            "id": 8,
+            "name": "Hoodie ASSC",
+            "price": 140,
+            "stock": 1
+        },
+        {
+            "id": 9,
+            "name": "Beanie The North Face",
+            "price": 80,
+            "stock": 0
+        },
+        {
+            "id": 10,
+            "name": "Beanie Carhartt",
+            "price": 50,
+            "stock": 1
+        },
+        {
+            "id": 11,
+            "name": "Medias Stussy",
+            "price": 40,
+            "stock": 1
+        },
+        {
+            "id": 12,
+            "name": "Medias Drew",
+            "price": 50,
+            "stock": 0
+        }
+    ]
+}

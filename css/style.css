@@ -1,0 +1,670 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: content-box;
+  transition: 1s; }
+
+/* Usado para todas las hero images */
+.hero_image > img {
+  width: 100%; }
+
+/* ******************************************* */
+/* ***************INICIO HEADER*************** */
+/* ******************************************* */
+header {
+  background-color: #e6b12c;
+  display: flex;
+  justify-content: space-between; }
+  header .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-left: 0.5vw; }
+    header .logo h1 {
+      margin-top: 0.5vw;
+      font-size: 2vw; }
+    header .logo a img {
+      height: 3vw;
+      width: 3vw; }
+  header .icon {
+    font-size: 2vw;
+    color: black; }
+    header .icon:hover {
+      color: white;
+      transition: 0.2s; }
+  header .form-control {
+    width: 40vw;
+    height: 3vw;
+    display: flex;
+    align-self: center; }
+  header .nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 0.5vw;
+    margin-right: 0.5vw;
+    margin-top: 0.5vw; }
+
+/* ******************************************* */
+/* *****************HEADER END**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* *****************INICIO MAIN*************** */
+/* ******************************************* */
+#destacados {
+  display: grid;
+  grid-template-rows: 20% 75% 5%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "destacados_title destacados_title destacados_title destacados_title"
+ "article1 article2 article3 article4"
+ "ellipsis ellipsis ellipsis ellipsis";
+  gap: 1vw;
+  margin: 2.5vw;
+  margin-bottom: 5vw; }
+  #destacados h2 {
+    grid-area: destacados_title;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+    /* **************GRADIENT************ */
+    background-image: linear-gradient(to right, white, #e6b12c); }
+  #destacados .article1 {
+    grid-area: article1; }
+  #destacados .article2 {
+    grid-area: article2; }
+  #destacados .article3 {
+    grid-area: article3; }
+  #destacados .article4 {
+    grid-area: article4; }
+  #destacados .article1 img, #destacados .article2 img, #destacados .article3 img, #destacados .article4 img {
+    height: 100%;
+    width: 100%; }
+
+.productos {
+  display: grid;
+  grid-template-rows: 60% 40%;
+  grid-template-columns: 1.2fr repeat(2, 0.9fr);
+  grid-template-areas: "calzado indumentaria accesorios"
+ "calzado todos_los_productos todos_los_productos";
+  margin: 2.5vw;
+  gap: 10px; }
+  .productos .calzado, .productos .indumentaria, .productos .accesorios, .productos .todos_los_productos {
+    grid-area: calzado; }
+    .productos .calzado:hover, .productos .indumentaria:hover, .productos .accesorios:hover, .productos .todos_los_productos:hover {
+      transform: scale(0.95); }
+  .productos .indumentaria {
+    grid-area: indumentaria; }
+  .productos .accesorios {
+    grid-area: accesorios; }
+  .productos .todos_los_productos {
+    grid-area: todos_los_productos; }
+  .productos .calzado a img, .productos .indumentaria a img, .productos .accesorios a img, .productos .todos_los_productos a img, .productos .indumentaria a img, .productos .accesorios a img, .productos .todos_los_productos a img {
+    height: 100%;
+    width: 100%; }
+
+.encargos {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "encargos_img encargos_text";
+  margin: 2.5vw;
+  margin-top: 5vw; }
+  .encargos img {
+    grid-area: encargos_img;
+    height: 100%;
+    width: 100%; }
+  .encargos .encargos_text {
+    grid-area: encargos_text;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 5vw; }
+    .encargos .encargos_text h2 {
+      font-size: 4vw; }
+    .encargos .encargos_text p {
+      font-size: 2vw; }
+    .encargos .encargos_text button {
+      font-size: 2.5vw; }
+    .encargos .encargos_text .encargos_button {
+      text-decoration: none;
+      color: #e6b12c; }
+      .encargos .encargos_text .encargos_button:hover {
+        color: #ffc42e; }
+
+.contacto {
+  display: grid;
+  grid-template-rows: 40vw;
+  grid-template-columns: 40% 60%;
+  grid-template-areas: "maprouter showroom";
+  background-image: url(../media/showroom.jpg);
+  background-position: center;
+  margin-top: 5vw; }
+  .contacto .maprouter {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contacto .maprouter #gmap_canvas {
+      grid-area: maprouter;
+      width: 80%;
+      height: 80%; }
+  .contacto .showroom {
+    grid-area: showroom;
+    display: flex;
+    flex-direction: column;
+    margin-left: 4vw;
+    justify-content: center; }
+    .contacto .showroom h2 {
+      margin-bottom: 4vw;
+      font-size: 3vw; }
+    .contacto .showroom .showroom_data {
+      display: flex;
+      margin-top: 1vw;
+      align-items: center;
+      font-size: 2vw; }
+      .contacto .showroom .showroom_data i {
+        margin-right: 1vw; }
+      .contacto .showroom .showroom_data a {
+        text-decoration: none;
+        color: black; }
+        .contacto .showroom .showroom_data a:hover {
+          color: #e6b12c; }
+      .contacto .showroom .showroom_data:hover {
+        color: #e6b12c; }
+
+/* ******************************************* */
+/* *******************MAIN END**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ****************INICIO FOOTER************** */
+/* ******************************************* */
+footer {
+  display: flex;
+  flex-direction: column; }
+  footer .footer {
+    margin-top: 4vw;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1vw; }
+    footer .footer .footer_data {
+      display: flex;
+      flex-direction: column; }
+      footer .footer .footer_data ul li {
+        list-style: none; }
+      footer .footer .footer_data a {
+        text-decoration: none;
+        color: black; }
+        footer .footer .footer_data a:hover {
+          color: #ffc42e;
+          transition: 0.4s; }
+      footer .footer .footer_data i {
+        margin-right: 0.5vw; }
+  footer .copyright {
+    margin-top: 2vw;
+    font-size: 1vw; }
+
+/* ******************************************* */
+/* *****************FOOTER END**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ***********INICIO productos.html*********** */
+/* ******************************************* */
+#products {
+  display: grid;
+  gap: 2vw;
+  margin: 2.5vw;
+  margin-top: 5vw;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "product1 product2 product3 product4"
+ "product5 product6 product7 product8"
+ "product9 product10 product11 product12"; }
+  #products .product1 {
+    grid-area: product1; }
+    #products .product1 img {
+      height: 100%;
+      width: 100%; }
+  #products .product2 {
+    grid-area: product2; }
+    #products .product2 img {
+      height: 100%;
+      width: 100%; }
+  #products .product3 {
+    grid-area: product3; }
+    #products .product3 img {
+      height: 100%;
+      width: 100%; }
+  #products .product4 {
+    grid-area: product4; }
+    #products .product4 img {
+      height: 100%;
+      width: 100%; }
+  #products .product5 {
+    grid-area: product5; }
+    #products .product5 img {
+      height: 100%;
+      width: 100%; }
+  #products .product6 {
+    grid-area: product6; }
+    #products .product6 img {
+      height: 100%;
+      width: 100%; }
+  #products .product7 {
+    grid-area: product7; }
+    #products .product7 img {
+      height: 100%;
+      width: 100%; }
+  #products .product8 {
+    grid-area: product8; }
+    #products .product8 img {
+      height: 100%;
+      width: 100%; }
+  #products .product9 {
+    grid-area: product9; }
+    #products .product9 img {
+      height: 100%;
+      width: 100%; }
+  #products .product10 {
+    grid-area: product10; }
+    #products .product10 img {
+      height: 100%;
+      width: 100%; }
+  #products .product11 {
+    grid-area: product11; }
+    #products .product11 img {
+      height: 100%;
+      width: 100%; }
+  #products .product12 {
+    grid-area: product12; }
+    #products .product12 img {
+      height: 100%;
+      width: 100%; }
+  #products .product {
+    background-color: grey;
+    padding: 1vw;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw; }
+    #products .product form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1vw; }
+      #products .product .btn-light:hover {
+        color: #e6b12c; }
+
+.vertodo_text {
+  text-decoration: none;
+  color: #e6b12c; }
+  .vertodo_text:hover {
+    color: #ffc42e; }
+
+.return {
+  /* USADO PARA TODOS LOS RETURN */
+  display: flex;
+  margin-top: 4vw;
+  justify-content: center;
+  text-decoration: none;
+  color: black; }
+  .return:hover {
+    color: #e6b12c; }
+
+/* calzado.html */
+#calzado {
+  display: grid;
+  gap: 2vw;
+  margin: 2.5vw;
+  margin-top: 5vw;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "product1 product2 product3 product4"
+ "product5 product6 product7 product8"; }
+  #calzado .product1 {
+    grid-area: product1; }
+    #calzado .product1 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product2 {
+    grid-area: product2; }
+    #calzado .product2 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product3 {
+    grid-area: product3; }
+    #calzado .product3 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product4 {
+    grid-area: product4; }
+    #calzado .product4 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product5 {
+    grid-area: product5; }
+    #calzado .product5 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product6 {
+    grid-area: product6; }
+    #calzado .product6 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product7 {
+    grid-area: product7; }
+    #calzado .product7 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product8 {
+    grid-area: product8; }
+    #calzado .product8 img {
+      height: 100%;
+      width: 100%; }
+  #calzado .product {
+    background-color: grey;
+    padding: 1vw;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw; }
+    #calzado .product form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1vw; }
+      #calzado .product form .btn-light:hover {
+        color: #e6b12c; }
+
+/* indumentaria.html */
+#indumentaria {
+  display: grid;
+  gap: 2vw;
+  margin: 2.5vw;
+  margin-top: 5vw;
+  grid-template-rows: 1, 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "product1 product2 product3 product4"; }
+  #indumentaria .product1 {
+    grid-area: product1; }
+    #indumentaria .product1 img {
+      height: 100%;
+      width: 100%; }
+  #indumentaria .product2 {
+    grid-area: product2; }
+    #indumentaria .product2 img {
+      height: 100%;
+      width: 100%; }
+  #indumentaria .product3 {
+    grid-area: product3; }
+    #indumentaria .product3 img {
+      height: 100%;
+      width: 100%; }
+  #indumentaria .product4 {
+    grid-area: product4; }
+    #indumentaria .product4 img {
+      height: 100%;
+      width: 100%; }
+  #indumentaria .product {
+    background-color: grey;
+    padding: 1vw;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw; }
+    #indumentaria .product form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1vw; }
+      #indumentaria .product form .btn-light:hover {
+        color: #e6b12c; }
+
+/* accesorios.html */
+#accesorios {
+  display: grid;
+  gap: 2vw;
+  margin: 2.5vw;
+  margin-top: 5vw;
+  grid-template-rows: 1, 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "product1 product2 product3 product4"; }
+  #accesorios .product1 {
+    grid-area: product1; }
+    #accesorios .product1 img {
+      height: 100%;
+      width: 100%; }
+  #accesorios .product2 {
+    grid-area: product2; }
+    #accesorios .product2 img {
+      height: 100%;
+      width: 100%; }
+  #accesorios .product3 {
+    grid-area: product3; }
+    #accesorios .product3 img {
+      height: 100%;
+      width: 100%; }
+  #accesorios .product4 {
+    grid-area: product4; }
+    #accesorios .product4 img {
+      height: 100%;
+      width: 100%; }
+  #accesorios .product {
+    background-color: grey;
+    padding: 1vw;
+    margin: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5vw; }
+    #accesorios .product form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1vw; }
+      #accesorios .product form .btn-light:hover {
+        color: #e6b12c; }
+
+/* ******************************************* */
+/* ************END productos.html************* */
+/* ******************************************* */
+/* ******************************************* */
+/* *************INICIO encargos.html********** */
+/* ******************************************* */
+#cotizacion {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 100%;
+  grid-template-areas: "img text"; }
+  #cotizacion img {
+    grid-area: img;
+    width: 95%;
+    height: 95%;
+    padding: 2.5vw; }
+  #cotizacion .cotizacion_text {
+    grid-area: text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2.5vw; }
+    #cotizacion .cotizacion_text .cotizacion_text_form {
+      display: flex;
+      flex-direction: column;
+      gap: 1vw;
+      margin-top: 1vw;
+      align-items: center; }
+      #cotizacion .cotizacion_text .cotizacion_text_form textarea {
+        resize: none;
+        width: 40vw; }
+      #cotizacion .cotizacion_text .cotizacion_text_form .cotizacion_text_form_button {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1vw;
+        gap: 5vw;
+        border-radius: 10%; }
+      #cotizacion .cotizacion_text .cotizacion_text_form .form-control:focus {
+        border-color: #e6b12c;
+        box-shadow: 0 0 0 0.25rem #ffc402; }
+
+/* ******************************************* */
+/* ************END encargos.html************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ****INICIO devoluciones/privacidad.html**** */
+/* ******************************************* */
+.politics_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/* ******************************************* */
+/* *****FIN devoluciones/privacidad.html****** */
+/* ******************************************* */
+/* ******************************************* */
+/* *************INICIO faq.html*************** */
+/* ******************************************* */
+.politics_text div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none; }
+
+.accordion {
+  width: 60vw; }
+  .accordion .accordion-button:focus {
+    border-color: #e6b12c;
+    box-shadow: 0 0 0 0.25rem #ffc402; }
+  .accordion .accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #e6b12c; }
+
+/* ******************************************* */
+/* ***************END faq.html**************** */
+/* ******************************************* */
+/* ******************************************* */
+/* ************INICIO MEDIA QUERIES*********** */
+/* ******************************************* */
+/* HEADER */
+@media screen and (max-width: 768px) {
+  header .logo h1 {
+    font-size: 3vw;
+    margin-top: 1.5vw; }
+  header .logo a img {
+    height: 1.5rem;
+    width: 1.5rem; }
+  header .form-control {
+    width: 25vw; }
+  header .icon {
+    font-size: 5vw; } }
+
+/* MAIN */
+@media screen and (max-width: 768px) {
+  #destacados {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 0px;
+    margin-bottom: 10vw; }
+    #destacados h2 {
+      font-size: 5vw; }
+  .article2, .article3, .article4 {
+    display: none; } }
+
+@media screen and (max-width: 768px) {
+  .productos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw; } }
+
+@media screen and (max-width: 768px) {
+  .encargos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vw; }
+    .encargos .encargos_text h2 {
+      font-size: 10vw; }
+    .encargos .encargos_text p {
+      font-size: 4vw; }
+    .encargos .encargos_text button {
+      font-size: 5vw; } }
+
+@media screen and (max-width: 768px) {
+  .contacto {
+    grid-template-rows: 60vw;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 10vw; }
+    .contacto .showroom h2 {
+      font-size: 4vw; }
+    .contacto .showroom .showroom_data {
+      font-size: 3vw; } }
+
+/* FOOTER */
+@media screen and (max-width: 768px) {
+  footer > .footer {
+    font-size: 2.5vw; } }
+
+/* PRODUCTOS */
+@media screen and (max-width: 899px) {
+  #products {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "product1 product2"
+ "product3 product4"
+ "product5 product6"
+ "product7 product8"
+ "product9 product10"
+ "product11 product12"; }
+  .return {
+    margin-bottom: 5vw; }
+  #calzado {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "product1 product2"
+ "product3 product4"
+ "product5 product6"; }
+  #indumentaria {
+    display: grid;
+    grid-template-rows: 1, 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "product1 product2"; }
+  #accesorios {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "product1 product2"
+ "product3 product4"; } }
+
+/* ENCARGOS */
+@media screen and (max-width: 768px) {
+  #cotizacion {
+    display: flex;
+    flex-direction: column; }
+    #cotizacion .cotizacion_text {
+      margin-bottom: 10vw; }
+    #cotizacion .cotizacion_text_form input {
+      font-size: 10px; }
+    #cotizacion .cotizacion_text_form select {
+      font-size: 10px; }
+    #cotizacion .cotizacion_text_form textarea {
+      width: 50px;
+      font-size: 10px; } }
+
+/* PRIVACIDAD */
+@media screen and (max-width: 768px) {
+  .politics_h6 {
+    font-size: 3vw; } }
+
+/* ******************************************* */
+/* **************FIN MEDIA QUERIES************ */
+/* ******************************************* */

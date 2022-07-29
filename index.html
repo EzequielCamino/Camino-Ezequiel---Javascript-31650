@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/logo.jpg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/f5edb194bf.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="js/variables.js"></script>
+    <script defer src="js/miarchivo.js"></script>
+    <title>Golden Loot - Productos</title>
+    <meta name="keywords" content="Sneakers, Streetwear, Zapatillas, Calzado, Nike, Jordan, Hype">
+    <meta name="Description" content="En Golden Loot podrás encontrar y comprar calzado, indumentaria y accesorios hype y de streetwear. También hacer encargos específicos">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="media/logo.jpg" alt="GoldenLoot Logo">
+            </a>
+            <h1>GOLDENLOOT</h1>
+        </div>
+        <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Búsqueda" aria-label="Search">
+            <button class="fa-solid fa-magnifying-glass btn" type="submit"></button>
+        </form>
+        <nav class="nav">
+            <ul>
+                <li><a data-bs-toggle="modal" data-bs-target="#Modal" class="icon"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="" class="icon"><i class="fa-solid fa-user"></i></a></li>
+                <div class="modal" id="Modal" tabindex="-1">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title">Carrito</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Artículo</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody id="carrito">
+                                </tbody>
+                            </table>
+                        </div>
+                        <button id="restoreCart">Restaurar carrito</button><br>
+                        <button id="buyCart">Comprar carrito</button>
+                        <div id="totalCarrito" class="modal-footer">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero_image">
+            <img src="media/hero_productos.jpg" alt="Nuestros Productos">
+        <section id="products">
+        </section>
+        <a href="index.html" class="return">Volver a página principal</a>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer_data">
+                <h4>Métodos de pago</h4>
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i>Tarjetas de crédito</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Tarjetas de débito</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Transferencia bancaria</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Criptomonedas (USDT)</li>
+                </ul>
+            </div>
+            <div class="footer_data">
+                <h4>Soporte</h4>
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="faq.html">Preguntas frecuentes</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="privacidad.html">Política de privacidad</a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="devoluciones.html">Política de devoluciones</a></li>
+                </ul>
+            </div>
+            <div class="footer_data">
+                <h4>Redes</h4>
+                <ul>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><i class="fa-solid fa-chevron-right"></i><a href="https://api.whatsapp.com/send?phone=1123456789" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <h6>Copyright © GoldenLoot, 2022</h6>
+        </div>
+    </footer>
+    <!-- Bootstrap scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
